@@ -1,0 +1,102 @@
+-#author("2021-07-08T04:32:22+00:00","","")
++#author("2021-07-08T04:33:03+00:00","","")
+ [[Research]]
+ 
+ #contents
+ ~
+ 
+ * [[TechnicalWriting]] [#h3f5ba8e]
+ 
++*[[MyQuestions]] [#l9f8f614]
++The above page archives my questions I actually faced with.
+ 
+-
+ * [[Emacs]] [#v20a3fe5]
+ - Outline-mode~
+  -*- Outline -*-
+  
+  * 1st level item
+  - 2nd 
+    - 3rd 
+      - 4th
+ ~
+ An example of presentation slide with outline-mode. 
+ &ref(outline_ohsaki.txt,,example);~
+ A simple Perl script for outline-to-LaTeX conversion to convert your outline file to LaTeX format. 
+ &ref(outline2tex.pl,,script);~
+  $ perl outline2tex.pl outline_ohsaki.txt
+ for converting to a presentation slide, use -s option of this file. &ref(outline2html.dms,,script);~
+  $ perl outline2html.dms outline_ohsaki.txt
+ 
+ 
+ 
+ * LaTeX [#ha4f8cd5]
+ - Which LaTeX? &ref(hello.tex,,script);~
+ You can confirm which LaTeX are you using by compiling this script in your environment. 
+ 
+ - LaTeX compiler &ref(tex2pdf.sh,,script);~
+ This compiler can make PDF files by selecting an appropriate compile method among various kinds of tex-class files.
+ 
+ 
+ - LaTeX template &ref(document.tex,,template);~
+ This is a template of LaTeX style document.
+ 
+ 
+ - My LaTeX style &ref(hayamizu.sty,,example);~
+ This is my LaTeX style file specialized in paper writing.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ * Review [#r0fc94f4]
+ - How to review &ref(how2-review-papers.txt,,example);~
+ This is a how-to document to review conference/journal papers. This file is received from Matsuzono-san. 
+ 
+ 
+ - [[ReviewPapers]]
+ 
+ 
+ * Shell [#w7a6e709]
+ - Which Shell?~
+  $ echo $SHELL
+ Confirm which shell are you currently using.
+ 
+ - Available Shells~
+  $ cat /etc/shells
+ List up available shell.
+ 
+ 
+ * Ubuntu [#o95b9325]
+ - sudo privilege~
+  # gpasswd -a hayamizu sudo
+ Give sudo privilege to a user whose name is "hayamizu".
+ 
+ - ctrl2cap~
+ Change keyboard setting to UNIX-like one. Assign "ctrl" to "caps lock".
+ 
+ -- Ubuntu 16.04~
+  $ sudo vi /etc/default/keyboard
+ Add the following option,
+  XKBOPTIONS="ctrl:nocaps"
+ and restart setup.
+  $ sudo systemctl restart console-setup
+ or
+  $ sudo reboot
+ 
+ -- Ubuntu 18.04~
+   $ sudo 
+ 
+ - chown~
+  # chown cefore:cefore
+ 
+ - DNS
+  /etc/resolv.conf
+ 
+  
+ 
+ 
+-*[[MyQuestions]] [#l9f8f614]
+-The above page archives my questions I actually faced with.

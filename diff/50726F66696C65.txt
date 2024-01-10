@@ -1,0 +1,207 @@
+-#author("2023-07-14T01:55:38+00:00","","")
++#author("2023-07-14T01:57:14+00:00","","")
+ [[Yusaku Hayamizu]]
+ 
+ #contents
+ ~
+ 
+ * 略歴 (Biography) [#if20aa7b]
+ - 日本語
+  平26 関西大・システム理工・電気電子情報卒．平31 同大大学院博士後期課程了．同年，国立研究開発法人情報通信研究機構（NICT）入所．コンピュータネットワーク，情報指向ネットワーク，トラヒック制御，及び，それらの性能評価に関する研究に従事．IEEE，ACM，電子情報通信学会各会員．博士（工学）．
+ 
+ 
+ - English
+- Yusaku Hayamizu is a Researcher at the Network Architecture Laboratory, NICT. He received his B.E., M.E., and Ph.D. degrees in engineering from Kansai University in 2014, 2016, and 2019, respectively. He is currently a Researcher at the Network Architecture Laboratory in National Institute of Information and Communications Technology (NICT). His research interests include computer networks, information-centric networks, traffic control, in-network computing, and network softwarization. He is the recipient of Best Paper Awards from the 2017 IEEE CQR Workshop and the 2018 IEEE LANMAN Symposium. He is a Member of the ACM and IEEE.
++ Yusaku Hayamizu received his B.E., M.E., and Ph.D. degrees in engineering from Kansai University in 2014, 2016, and 2019, respectively. He is currently a Researcher at the Network Architecture Laboratory in National Institute of Information and Communications Technology (NICT). His research interests include computer networks, information-centric networks, traffic control, in-network computing, and network softwarization. He is the recipient of Best Paper Awards from the 2017 IEEE CQR Workshop and the 2018 IEEE LANMAN Symposium. He is a Member of the ACM, the IEEE, and the IEICE.
+ 
+ 
+ ~
+ *学歴・職歴 (Education/Work Experience) [#w4b7a29c]
+ 
+ - 日本語
+ |CENTER:年|CENTER:月|CENTER:学歴|
+ |CENTER:|CENTER:|LEFT:600|c
+ |平成22年|3月|奈良県立郡山高等学校　卒業|
+ |平成22年|4月|関西大学システム理工学部 電気電子情報工学科　入学|
+ |平成26年|3月|関西大学システム理工学部 電気電子情報工学科　卒業|
+ |平成26年|4月|関西大学大学院理工学研究科 博士課程前期課程 システム理工学専攻 電気電子情報工学分野　入学|
+ |平成28年|3月|関西大学大学院理工学研究科 博士課程前期課程 システム理工学専攻 電気電子情報工学分野　修了|
+ |平成28年|4月|関西大学大学院理工学研究科 博士課程後期課程 総合理工学専攻 電気電子情報工学分野　入学|
+ |平成31年|3月|関西大学大学院理工学研究科 博士課程後期課程 総合理工学専攻 電気電子情報工学分野　修了|
+ |CENTER:年|CENTER:月|CENTER:職歴|
+ |CENTER:|CENTER:|LEFT:|c
+ |平成31年|4月|国立研究開発法人 情報通信研究機構 ネットワークシステム研究所 ネットワーク基盤研究室 入所|
+ |令和3年|4月|国立研究開発法人 情報通信研究機構 ネットワーク研究所 ネットワークアーキテクチャ研究室 入所|
+ |||以上|
+ #br
+ 
+ - English
+ 
+ 
+ * 受賞歴 (Awards) [#a6fbc726]
+ - 表彰
+ -- 令和3年度情報通信研究機構表彰優秀賞（団体）～Cefore 発明・開発チーム～, 2021年6月22日.
+ - 論文賞
+ -- 電子情報通信学会ネットワークシステム研究専門員会 若手研究奨励賞, 2020年1月. (acceptance rate &cong; 10%) 
+ -- The 24th IEEE International Symposium on Local and Metropolitan Area Networks (LANMAN 2018) Best Paper Award, June 2018. (acceptance rate &cong; 36%)
+ -- IEEE Communications Quality and Reliability 2017 (CQR 2017) Best Paper Award, May 2017. (acceptance rate = 40%)
+ -- 第13回IEEE関西支部 学生研究奨励賞, February 2017.
+ 
+ - ポスター賞
+ -- The 13th International Symposium in Science and Technology at Cheng Shiu University 2018 (ISST 2018) Poster Presentation Award, August 2018.
+ -- The 4th International Symposium on Electrical Engineering and Computer Science 2017 (ISEECS 2017) Best Poster Presentation Award, September 2017.
+ -- The 11th International Symposium in Science and Technology at Kansai University 2016 (ISST 2016) Poster Presentation Award, July 2016.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ~
+ * 学会活動 (Academic Activities) [#rbd855ac]
+ - 会員 (Membership)
+ -- 2013--present 電子情報通信学会, The Institute of Electronics, Information and Communication Engineers (IEICE)
+ -- 2015--present The Institute of Electrical and Electronics Engineers (IEEE)
+ -- 2017--present Association for Computing Machinery (ACM)
+ - 委員 (Committee)
+ -- 2020--present IEEE ICC/GLOBECOM (CQRM) TPC member
+ -- 2022--present 電子情報通信学会情報指向ネットワーク（ICN）研究会専門委員
+ - 査読 (Peer Review)
+ -- IEEE Transactions on Network and Service Management
+ -- IEEE Communications Magazine
+ -- IEEE Access
+ -- IEICE Transactions on Communications
+ -- IEICE 通信ソサイエティ和文論文誌
+ -- IEEJ Society C
+ 
+ 
+ ~
+ *連絡先 (Contact Information) [#oc9fccc4]
+ &size(15){''関西大学''}; 
+ //** 関西大学 [#v2bd3608]
+ - 日本語
+  住所: 〒564-8680 大阪府吹田市山手町3-3-35 
+  関西大学システム理工学部電気電子情報工学科　情報通信工学研究室
+  電話番号: 06-6368-1111 (内線: 5737)
+  E-mail: k911112[at]kansai-u.ac.jp
+ 
+ - English
+  Address: Department of Electrical and Electronic Engineering, Faculty of Engineering Science, Kansai University
+  3-3-35 Yamate-cho, Suita-shi, Osaka, 564-8680 Japan
+  Phone: +81-6-6368-1111 (ext. 5737)
+  E-mail: k911112[at]kansai-u.ac.jp
+ 
+ 
+ &size(15){''NICT''}; 
+ //**  NICT [#qe83473e]
+ - 日本語
+  〒184-8795 東京都小金井市貫井北町4-2-1 
+  国立研究開発法人情報通信研究機構ネットワーク研究所ネットワークアーキテクチャ研究室
+  Phone: 042-327-7361
+  E-mail: hayamizu[at]nict.go.jp
+ 
+ - English
+  Network Architecture Laboratory, Network Research Institute, NICT 
+  Room No. 202, Building No. 5, (Koganei HQ) 4-2-1,
+  Nukui-Kitamachi, Koganei-shi, Tokyo 184-8795 Japan 
+  Phone: +81-42-327-7361
+  E-mail: hayamizu[at]nict.go.jp
+ 
+ // &size(15){''NICT (NS4)''}; 
+ // //**  NICT [#qe83473e]
+ // - 日本語
+ //  〒184-8795 東京都小金井市貫井北町4-2-1 
+ // 情報通信研究機構 ネットワークシステム研究所 ネットワーク基盤研究室
+ // Phone: 042-327-7361
+ // E-mail: hayamizu[at]nict.go.jp
+ 
+ //- English
+ //  Network Science and Convergence Device Technology Laboratory, 
+ //  Network System Research Institute, NICT 
+ //  Room No. 202, Building No. 5, 
+ //  (Koganei HQ) 4-2-1, Nukui-Kitamachi, Koganei-shi, Tokyo 184-8795 Japan 
+ //  Phone: +81-42-327-7361
+ //  E-mail: hayamizu[at]nict.go.jp
+ 
+ 
+ ~
+ *署名 (Signature) [#w8984dd5]
+ &size(15){''関西大学''}; 
+ // ** 関西大学 [#fccdcff1]
+ - 日本語
+  ------------------------------------------------
+  速水 祐作
+  関西大学大学院　理工学研究科　総合理工学専攻
+  博士課程後期課程
+  情報通信工学研究室
+  Phone: 06-6368-1111 (ext. 5737)
+  E-mail: k911112@kansai-u.ac.jp
+  ------------------------------------------------
+ 
+ - English
+  ------------------------------------------------
+  Yusaku Hayamizu
+  Ph.D. student
+  Graduate School of Science and Engineering
+  Kansai University
+  Phone: +81-6-6368-1111 (ext. 5737)
+  E-mail: k911112@kansai-u.ac.jp
+  ------------------------------------------------
+ 
+ 
+ &size(15){''NICT''}; 
+ // ** NICT [#f78e7220]
+ - 日本語 
+  --------------------------------------------------------------------------------------------------------------
+  国立研究開発法人 情報通信研究機構
+  ネットワーク研究所ネットワークアーキテクチャ研究室
+  
+  速水 祐作
+  
+  〒184-8795 東京都小金井市貫井北町4-2-1
+  Phone: 042-327-7361     FAX: 042-327-6680     E-mail: hayamizu@nict.go.jp
+  --------------------------------------------------------------------------------------------------------------
+ 
+ - English
+  -----------------------------------------------------------------------------------------
+  Yusaku Hayamizu, Ph.D.
+  
+  Network Architecture Laboratory, Network Research Institute,
+  National Institute of Information and Communications Technology (NICT)
+  
+  Phone: +81-42-327-7361     E-mail: hayamizu@nict.go.jp
+  -----------------------------------------------------------------------------------------
+ 
+ 
+ // &size(15){''NICT (NS4)''}; 
+ // // ** NICT [#f78e7220]
+ // - 日本語 &ref(20190827_nict_hayamizu_signature_jp.html,, html);
+ //  --------------------------------------------------------------------------------------------------------------
+ //  国立研究開発法人 情報通信研究機構 ネットワークシステム研究所
+ //  ネットワーク基盤研究室
+ //  
+ //  速水 祐作
+ //  
+ //  〒184-8795 東京都小金井市貫井北町4-2-1
+ //  Phone: 042-327-7361     FAX: 042-327-6680     E-mail: hayamizu@nict.go.jp
+ //  --------------------------------------------------------------------------------------------------------------
+ 
+ // - English &ref(20190827_nict_hayamizu_signature_en.html,, html);
+ //  --------------------------------------------------------------------------------------------------------------
+ //  Yusaku Hayamizu, Ph.D.
+ //  
+ //  Network System Research Institute
+ //  National Institute of Information and Communications Technology (NICT)
+ //  
+ //  Phone: +81-42-327-7361     FAX: +81-42-327-6680     E-mail: hayamizu@nict.go.jp
+ //  --------------------------------------------------------------------------------------------------------------
+ 
+ 
+ ~
+ *著作権 (Copyright) [#i6bff456]
+  Copyright © 2016-2022 Yusaku Hayamizu. All Right Reserved.

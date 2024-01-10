@@ -1,0 +1,43 @@
+#!/bin/sh
+
+echo "This is a script for compiling LaTeX to create PDF, made by Yusaku Hayamizu in July 2019"
+
+class="unknown"
+while read line
+do
+    name=${line:0:13}
+    if [ $name="documentclass" ]
+    then
+	class=$line
+	class=${class%\}*}
+	class=${class#*\{}
+	break
+    else
+	echo "skipping this line, '"$line"'" 
+    fi
+done < $1.tex
+
+# class="ieeeaccess"
+# class="IEEEtrans"
+
+case "$class" in
+    IEEEtran )
+	echo "Class = '"$class"'"
+	uplatex $1
+	dvipdfmx $1.dvi
+	;;
+    ieice )
+	echo "Class = '"$class"'"
+	uplatex $1
+	dvipdfmx $1.dvi
+	;;
+    ieeeaccess )
+	echo "Class = '"$class"'"
+	pdflatex $1
+	;;
+    * )
+	echo "The unknown class '"$class"' is used, check the '"$1".tex' file, please."
+esac
+    
+# /Applications/Skim.app/Contents/MacOS/Skim $1.pdf &
+

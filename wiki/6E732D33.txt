@@ -1,0 +1,27 @@
+#author("2019-07-01T05:40:44+00:00","","")
+[[Simulator]]
+
+*Network Simulator 3 (ns-3) [#nb668959]
+[[ns-3:https://www.nsnam.org]] is a discrete-event network simulator for Internet systems, written in C++/Python. The previous version is [[ns-2:https://www.isi.edu/nsnam/ns/]].
+
+~
+** Installation [#qac9d164]
+You should follow [[this:https://www.nsnam.org/wiki/Installation]] kind instruction.
+
+~
+** Getting Started [#a51ca6d3]
+
+~
+** Links [#a5a6452b]
+
+***API documentation [#w76932cd]
+https://www.nsnam.org/docs/release/3.29/doxygen/index.html
+
+***Wiki [#jaec2edb]
+https://www.nsnam.org/wiki/Main_Page
+
+***ns-3 App Store [#oac6b2dd]
+The ns-3 App Store is a supplemental web site allowing users to find and learn about ns-3 extensions. This store was launched to provide a central place for structured information about ns-3 extensions
+
+https://apps.nsnam.org
+&ref(ns3-app-store.pdf,,overview);~

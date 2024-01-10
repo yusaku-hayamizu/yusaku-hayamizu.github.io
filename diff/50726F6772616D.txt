@@ -1,0 +1,109 @@
+-#author("2020-01-29T01:59:12+00:00","","")
++#author("2022-03-31T03:49:30+00:00","","")
+ [[Research]]
+ 
+ *[[Cefore]] [#p575b22f]
+ 
+-*[[Gnuplot]] [#n15a8ed6]
++*[[SSH]] [#rec4dceb]
+ 
+ *[[KVM]] [#ke7374d3]
+ 
+ *[[Programming Language]] [#l3a17208]
+ 
+ *[[Simulator]] [#b5db6e3c]
+ 
++*[[Gnuplot]] [#n15a8ed6]
++
+ *[[TimeMachine]] [#wcfcc4f4]
+ 
+ *[[UNIX Command Reference]] [#f68697c0]
+ 
+ * [[Web]] [#s4b7d067]
+ 
+ * Package/Software/Command? [#f8ec7b50]
+ 
+ -apache~
+ [[https://httpd.apache.org/]]
+ 
+ -apt
+ 
+ -auctex
+ 
+ -emacs
+ 
+ -gdb
+ 
+ -gnuplot
+ 
+ -grep
+ 
+ -indent
+ 
+ -''&color(red){iperf (ToDo)};''
+ -- server~
+ Create an iperf server with "-s" option, and allow only 1 connection with "-P" option?
+  $ iperf -s -P 1
+  $ sudo iperf -s -P 1 -p 80
+ 
+ -- client
+  $ iperf -c 192.168.1.1 -p 80 -i 1.0 --time 60
+ 
+ 
+ -make
+ 
+ -patch
+ 
+ -rsync
+ 
+ -git
+ 
+ -''&color(red){wget (ToDo)};''
+ 
+ -php~
+ [[https://www.php.net/]]
+ 
+ -ps2eps
+ 
+ -''&color(red){ssh (ToDo)};''
+  $ ssh hayamizu@192.168.100.1
+  $ ssh -p 2222 hayamizu@192.168.100.1
+ RSA/ECDSA
+  $ cat ~/.ssh/id_rsa
+  $ cat ~/.ssh/id_ecdsa
+ Change sshd.
+  # /etc/ssh/sshd_config
+ 
+ 
+ 
+ -tcpdump
+ 
+ -iptables
+ 
+ -ip route
+ 
+ -ufw~
+ Ufw stands for Uncomplicated Firewall, and is program for managing a netfilter firewall. It provides a command line interface and aims to be uncomplicated and easy to use. See the details in the official page ( https://launchpad.net/ufw ).
+ 
+ -- installation
+  sudo apt-get install ufw
+ 
+ -- how to use
+  # add rules as follows
+  sudo ufw deny 22 
+  sudo ufw allow 80/tcp 
+  sudo ufw default DENY    # this is default setting, maybe
+  sudo ufw default ALLOW
+  sudo ufw allow from 192.168.100.xxx/24 to any port 80/tcp    # specify hosts/networks
+  
+  # delete rules
+  sudo ufw delete "n"    # "n" is rule ID, shown in the "status" command with "numbered" option.
+  
+  # others
+  sudo ufw status (numbered)
+  sudo ufw reload
+  sudo ufw disable
+  sudo ufw enable
+ 
+ 
+ -TeX2img

@@ -1,0 +1,22 @@
+%\documentclass[a4, twocolumn]{jsarticle}
+\documentclass[a4]{jsarticle}
+\usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
+\usepackage[dvips]{graphicx}
+
+\title{Please enter the titile.}
+\author{Y. Hayamizu}
+\date{July 1, 2016}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Abstract goes here.
+\end{abstract}
+
+
+\section{}
+Sentence goes here.
+
+\end{document}

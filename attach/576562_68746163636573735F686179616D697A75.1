@@ -1,0 +1,21 @@
+# Basic login
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /Applications/MAMP/htdocs/.htpasswd
+require valid-user
+
+# Security
+Options -Indexes
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+Deny from all
+</Files>
+
+#Order deny, allow
+Deny from all
+# just from me(qubeley) and sazabi
+Allow from localhost 
+Allow from 133.69.36.90
+#Allow from 133.69.36.0/24
+#Allow from 133.243.146.0/24
+

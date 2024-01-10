@@ -1,0 +1,58 @@
+#author("2022-03-31T04:59:20+00:00","","")
+[[Program]]
+
+#contents
+
+* [[SSH:https://www.openssh.com]] [#fe5f5306]
+
+サーバへのリモートアクセスに使用する通信プロトコルで、ポート番号は22を利用します。
+詳細は[[Wiki:https://en.wikipedia.org/wiki/Secure_Shell]] を参照してください。
+
+** Installation [#d88e8531]
+*** Ubuntu [#b4bbc9fa]
+Ubuntu は Linux なので、ssh は標準 install 済みです。
+
+*** macOS [#iec69d53]
+macOS は unix-based なので、ssh は標準 install 済みです。
+
+*** Windows [#df06f3c0]
+[[TeraTerm:https://ttssh2.osdn.jp/index.html.en]] や [[Putty:https://www.putty.org/]] などが有名です。Web からダウンロードしてアプリケーションとして利用してください。
+
+** Getting Started [#de7f6019]
+下記のマシン構成を例に説明します。
+   クライアント用マシン                                                                    サーバ用マシン
+ < hayamizu@client > --------158.217.184.0/24 -------- < hayamizu@server >
+ 
+ ユーザ名: hayamizu※
+ クライアント用マシンの hostname: client (158.217.184.xxx)
+ サーバ用マシンの hostname: server (158.217.184.yyy)
+
+※ client=macOS/Ubuntu, server=Ubuntu という構成での説明です。また、基本的に、各自ユニークなユーザ名を利用して、サーバ間でユーザ名は共通化しておいた方が良いです。先輩などに同性の方がいる場合は、自分で好きな名前 (ID) を考えること。 
+
+*** Server [#ee269671]
++ まず、SSH の port が LISTEN になっているかどうか確認します。
+ hayamizu@server:~$ netstat -lntp
+ (Not all processes could be identified, non-owned process info will not be shown, you would have to be root to see it all.)
+ Active Internet connections (only servers)
+ Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+ tcp        0      0 0.0.0.0:22            0.0.0.0:*               LISTEN      -    
+
+*** Client [#ud6289c6]
++ 公開鍵・秘密鍵の pair を作成する。今回、鍵形式はRSA、鍵長を4096bitに設定します。
+ $ ssh-keygen -t rsa -b 4096
+ hayamizu@client ~ % ls .ssh/id_rsa.pub 
+ .ssh/id_rsa.pub
++ 公開鍵をサーバの authorized_keys （許可する鍵リスト）に登録します。 ※1,2
+ $ scp ~/.ssh/id_rsa.pub hayamizu@server:~/.ssh/authorized_keys
+※1 authorized_keys は存在しないので、初回のみ scp で転送します。二つ目以降の鍵を登録する場合は、ssh でログインして、authrorized_keys に追記して下さい。~
+※2 /etc/hosts に "158.217.184.yyy server"と記載されている前提で話を進めます。記載していない場合、server=158.217.184.yyy と直接入力して下さい。
++ 公開鍵認証で server に SSH 接続できることを確認する。
+ $ ssh hayamizu@server
+ここでパスワード入力を求められなければ、鍵認証での接続ができている。
+
+*** Server [#m11b1b9a]
++ サーバ側でパスワード認証を無効化する。
+ $ sudo emacs -nw /etc/ssh/sshd_config 
+ $ PasswordAuthentication yes # <- no に変更して保存・終了
+ $ sudo service sshd restart
+※ パスワード認証が無効になっているかどうか確認する際、新たな shell いて接続確認を行うこと。設定間違い等により、サーバに全くアクセスできなくなる状況を防ぐため。
