@@ -1,0 +1,146 @@
+#!/usr/bin/env perl
+#
+# Convert Emacs outline-mode text to LaTeX format.
+# Copyright (c) 2003-2012, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+# $Id: outline2tex,v 1.12 2013/06/07 11:40:13 oosaki Exp ohsaki $
+#
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+# usage: outline2tex [-s] [file...]
+
+use English;
+use Getopt::Std;
+use strict;
+
+our $item_level  = 0;
+our $is_slide    = 0;
+our $first_slide = 1;
+
+sub item_offset {
+    my $level = shift;
+
+    return (' ' x (($level - 1) * 2));
+}
+
+sub start_item_level {
+    my ($level, $str) = @_;
+
+    end_item_level($level);
+    while ($item_level < $level) {
+        $item_level++;
+        print item_offset($item_level) . "\\begin{itemize}\n";
+    }
+    if ($level == 0) {
+        if ($is_slide) {
+            print "\\begin{slide}{$str}\n\n";
+            $first_slide = 0;
+        } else {
+            print "\n\\section{$str}\n\n";
+        }
+    } else {
+        print item_offset($item_level) . "\\item $str\n";
+    }
+    return $level;
+}
+
+sub end_item_level {
+    my $level = shift;
+
+    while ($item_level > $level) {
+        print item_offset($item_level) . "\\end{itemize}\n";
+        $item_level--;
+    }
+    if ($level == 0 and $is_slide and !$first_slide) {
+        print "\n\\end{slide}\n\n";
+    }
+    return $level;
+}
+
+sub dump_header {
+    if ($is_slide) {
+        print <<'EOF';
+\documentclass[pdf,colorBG,slideColor]{prosper}
+\begin{document}
+EOF
+    } else {
+        print <<'EOF';
+\documentclass[a4paper,twocolumn]{jarticle}
+\usepackage{a4large}
+\begin{document}
+EOF
+    }
+
+}
+
+sub dump_footer {
+    print <<'EOF';
+\end{document}
+EOF
+}
+
+getopts('s') || die "usage: $0 [-s] [file...]\n";
+$is_slide = $::opt_s;
+
+dump_header;
+while (<>) {
+    chomp;
+    next if /^-\*-/;
+    next if /^\s*$/;
+    if (/^%/) {
+        print "$_\n";
+        next;
+    }
+    s/%/\\%/g;
+    if (/^\*\s+/) {
+        my $str = $POSTMATCH;
+        $str =~ s/^[\d.]+\s+//;
+        $item_level = start_item_level(0, $str);
+    } elsif (/^-\s+/) {
+        my $str = $POSTMATCH;
+        $item_level = start_item_level(1, $str);
+    } elsif (/^  -\s+/) {
+        my $str = $POSTMATCH;
+        $item_level = start_item_level(2, $str);
+    } elsif (/^    -\s+/) {
+        my $str = $POSTMATCH;
+        $item_level = start_item_level(3, $str);
+    } elsif (/^      -\s+/) {
+        my $str = $POSTMATCH;
+        $item_level = start_item_level(4, $str);
+    }
+}
+$item_level = end_item_level(0);
+dump_footer;
+
+__END__
+
+** 4.2 実験環境
+
+- ネットワークトポロジ
+  - 実験に使用したネットワークのトポロジを図 XX に示す
+
+- 機器構成
+  - 以下のような機器によって構成されている
+    - それぞれの機器の仕様 (CPU、メモリ量、OS 種別など) を表 XX に示す
+  - 送信側ホスト、受信側ホスト
+    - Linux オペレーティングシステムが稼働する計算機
+    - TCP ベンチマークソフトウェア [?] によって複数の TCP フローを生成する
+    - 今回の実験では TCP の受信側ポート番号によって VPN を識別した
+  - 入側 PE ルータ、出側 PE ルータ
+    - Linux オペレーティングシステムが稼働する計算機
+    - 実装した I2VFC のプロトタイプを動作させる

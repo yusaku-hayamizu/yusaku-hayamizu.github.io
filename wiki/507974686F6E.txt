@@ -1,0 +1,20 @@
+#author("2019-06-13T02:57:12+00:00","","")
+[[Programming Language]]
+
+*[[Python]] [#e1781665]
+[[Python:https://www.python.org]] is a programming language to ...
+
+* Installation [#t0b2f00a]
+
+* Version [#xbff5fc3]
+
+Python2 and Python3
+
+* How to write [#y6475a65]
+
+This is a  simple sample code of Python. 
+&ref(hayamizu.py,,example);
+
+- Input/Output
+
+- Initialization/Declaration

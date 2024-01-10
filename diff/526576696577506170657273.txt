@@ -1,0 +1,63 @@
+-#author("2021-04-13T02:47:46+00:00","","")
++#author("2021-04-13T02:47:54+00:00","","")
+ [[Tips]]
+ 
+ * 1st pass (5-10 min) [#n788c13b]
+ ** To Do [#x6a96dd1]
+ + Title, Abstract, Introduction を注意深く読む
+-
+ + Section, Subsectionを見る
+-
+ + Conclusionを読む
+-
+ + Reference を見て、読んだ事のある論文をマークする
+ 
+ 
+ ** For [#u0519386]
+ + 論文のOverviewを把握する
+ -- 提案 (proposal) が何で、どんな技術課題 (technical problem/issue) を解決しているのか
+ + 論文のContributionsを把握する
+ + 論文のCorrectnessを確認する
+ -- 論文の仮定 (hypothesis)・想定 (assumption)は妥当か
+ 
+ 
+ ~
+ * 2nd pass (5 min) [#ib7eac97]
+ ** To Do [#uf053f13]
+ + 図 (Figure), グラフ (Graph), 表 (Table), 式 (Equation) を見る
+ + 未読のReferenceを確認する（Author, Title, Conference/Journal）
+ 
+ ** For [#bd35ceef]
+ + 論文が手抜きかどうかを判別する
+ + 本論文の研究背景をより理解する
+ 
+ 
+ ~
+ * 3rd pass (1-2 hour?) [#l215873e]
+ ** To Do [#ba36138e]
+ + 著者の仮定・前提と同じ立場に立ち、論文を再構築するつもりで読む
+ + 全ての仮定・前提を同定 (identify) し、それらを疑う(challenge)
+ + 自身ならどういう方法でアイデアを説明 (presentation) するか考える
+ 
+ ** For [#qdb9815b]
+ - 長所と短所を理解する
+ - 容易に論文の新規性（innovation）だけでなく、隠れた欠点や仮定・前提を発見する
+ - 暗黙の前提や関連論文の引用に関する欠陥、実験や分析手法に関する潜在的な問題点 (potential issue) を見つける
+ - 構成と説明方法に鋭い洞察を与える
+ - 本論文の全体構成が何も見ないで言えるようになる
+ 
+ 
+ ~
+ * Reviews & Comments [#webb2a64]
+ + Overview
+ -- 著者が本論文で何を提案しているのか簡潔に述べる
+ + Appropriateness
+ -- 本論文の内容がConference/Journalの募集する領域 (scope)と合っているかを述べる
+ + Contributions
+ -- 本論文の解決している技術課題について説明する
+ -- その課題が重要な課題であるかを述べる
+ -- 新規性(novelty)・創造性(creativity)・インパクト(impact)・技術的な成熟度 (technical depth)を書く
+ + Strength
+ -- 論文が採択 (accept) に値する主な理由
+ + Weakness
+ -- 論文を不採択に (reject) する主な理由

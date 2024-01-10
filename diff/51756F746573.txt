@@ -1,0 +1,38 @@
+-#author("2022-08-04T07:09:24+00:00","","")
++#author("2022-08-04T07:09:30+00:00","","")
+ [[Yusaku Hayamizu]]
+ 
+ - Ms. Audrey Hepburn
+ 
+-Giving is living. If you stop wanting to give, there’s nothing more to live for.
++ Giving is living. If you stop wanting to give, there’s nothing more to live for.
+ 
+ - Dr. Albert Einstein
+ 
+  In the middle of difficulty lies opportunity.
+  
+  Information is not knowledge.
+  
+  If you can’t explain it to a six year old, you don’t understand it yourself.
+  
+  All religions, arts and sciences are branches of the same tree.
+  
+  Reading, after a certain age, diverts the mind too much from its creative pursuits. Any man who reads too much and uses his own brain too little falls into lazy habits of thinking.
+  
+  Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.
+  
+  Life isn’t worth living, unless it is lived for someone else.
+  
+  When a man sits with a pretty girl for an hour, it seems like a minute. But let him sit on a hot stove for a minute – and it’s longer than any hour. That’s relativity.
+  
+  Common sense is the collection of prejudices acquired by age 18.
+  
+ 
+ 
+ 
+ - Dr. David Clarke, MIT
+ 
+  We reject kings, presidents and voting;
+  we believe in rough consensus and running code.
+  
+  -- at ISOC INET'92 in Kobe, Japan

@@ -1,0 +1,4 @@
+#author("2021-07-08T04:32:27+00:00","","")
+[[Tips]]
+
+https://www.eleceng.adelaide.edu.au/personal/dabbott/wiki/index.php/Guide_to_technical_writing

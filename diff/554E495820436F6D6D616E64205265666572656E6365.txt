@@ -1,0 +1,12 @@
+-#author("2019-07-16T03:18:35+00:00","","")
++#author("2019-07-16T03:18:40+00:00","","")
+ [[Program]]
+ 
+ - alias
+  alias 定義するコマンド名='新規作成・省略したいコマンド'
+ 例1）ls の表示文字色を種類毎に変更
+  $ alias ls='ls -G' # for macOS
+-
+ 例2）terminalからGoogle Chromeを実行
+  $ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+  $ chrome google.com

@@ -1,0 +1,48 @@
+-#author("2020-05-24T01:07:41+00:00","","")
++#author("2020-05-24T01:08:05+00:00","","")
+ [[Program]]
+ 
+ * LaTeX [#k0ccd541]
+ 
+ ** Figure [#y11fc97d]
+ *** figure [#lb2047f4]
+ 
+  \begin{figure}[t]
+   \begin{center}
+     \includegraphics[scale=1.0]{./fig/fig.eps}
+     \centering
+     \caption{Figure.}
+     \label{fig:}
+   \end{center}
+  \end{figure}
+ 
+ 
+ *** subfigure [#k20c6544]
+ 
+  \begin{figure}[t]
+    \subfigure[Figure A.]{
+      \includegraphics[scale=1.0]{./fig/aaa.eps}
+    }
+    \subfigure[Figure B.]{
+      \includegraphics[scale=1.0]{./fig/bbb.eps}
+    }
+    \caption{Figures A and B.}
+    \label{fig:}
+  \end{figure}
+ 
+ ** Table [#z5ada3f7]
+ 
++** table [#v161fd71]
+  \begin{table}[h]
+    \begin{center}
+      \caption{Table.}
+    \begin{tabular}{|c||c|c|c|}
+      \hline
+      & a & b & c \\ \hline \hline
+       x &  &  &  \\ \hline
+       y &  &  &  \\ \hline
+       z &  &  &  \\ \hline
+    \end{tabular}
+    \label{tab:}
+    \end{center}
+  \end{table}

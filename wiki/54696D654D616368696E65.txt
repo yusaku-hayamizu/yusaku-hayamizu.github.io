@@ -1,0 +1,33 @@
+#author("2019-07-31T07:12:54+00:00","","")
+[[Program]]
+
+[[TimeMachine]]
+
+TimeMachine backup from macOS to Ubuntu.
+
+-Ubuntu side
+Install "netatalk".
+ $ sudo apt-get install netatalk
+ $ sudo service netatalk stop
+Create directories where backup images to be saved.
+ $ sudo mkdir -m 0755 /home/Time_Machine
+ $ sudo mkdir -m 0700 /home/Time_Machine/hayamizu
+ $ sudo chown hayamizu:nogroup /home/Time_Machine/hayamizu/
+Modify config files. 
+ $ sudo emacs -nw /etc/netatalk/afpd.conf
+Change the last few lines as follows.
+ # default: 
+ # - -tcp -noddp -uamlist uams_dhx.so,uams_dhx2.so
+ - -tcp -noddp -uamlist uams_dhx.so,uams_dhx2.so -nosavepassword
+ 
+Set path.
+ $ sudo emacs -nw /etc/netatalk/AppleVolumes.default
+Change the last few lines as follows.
+ # ~/          "Home Directory"
+ /home/Time_Machine/hayamizu "DIRECTORY_NAME" allow:hayamizu cnidscheme:dbd volsizelimit:256000 options:usedots,upriv,tm 
+256000 means 256 [GB].
+ $ sudo service netatalk start
+
+
+
+-
