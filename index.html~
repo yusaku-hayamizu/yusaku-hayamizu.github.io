@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Private Room on MAMP(localhost)</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+  </head>
+
+<body>
+  <header>
+    <h1>Welcome back, Yusaku!</h1>
+  </header>
+  <div id="branding">
+    <p> Contents </p>
+  </div>
+  <nav>
+    <ul>
+      <p> <b> Yusaku Hayamizu </b> </p>
+      <li><a href="./hayamizu.html"> Homepage (English) </a></li>
+      <li><a href="./hayamizu_jp.html"> Homepage (Japanese) </a></li>
+      <li><a href="./hayawiki"> Wiki </a></li>
+
+      <p> <b> c.f. </b> </p>
+      <li><a href="./shijo.html"> Yoshinobu Shijo </a></li>
+    </ul>
+  </nav>
+
+  <footer>
+    <address> Copyright &copy; Yusaku Hayamizu. Allright Reserved.</address>
+  </footer>
+</body>
+</html>
