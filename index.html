@@ -87,7 +87,7 @@
 					<img src="img/ava.jpg" alt="Avatar">
 				</div>
 				<div class="unit-80">
-					<h2>I am<br><span id="typed"></span></h2>
+					<h2>I <span id="typed"></span></h2>
 				</div>
 				<p>
 				Yusaku Hayamizu received his B.E., M.E., and Ph.D. degrees in engineering from Kansai University in 2014, 2016, and 2019, respectively. 
@@ -841,7 +841,7 @@
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["Yusaku Hayamizu.", "PH.D. in Computer Science.", "Researcher at NICT.", " ", "..."],
+		    strings: ["am Yusaku Hayamizu.", "have a PH.D. in Computer Science.", "am a researcher at NICT.", " ", "am ..."],
 
 		typeSpeed:33,backDelay:1400,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
