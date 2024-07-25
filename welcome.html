@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hinako & Yusaku wedding </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yusaku Hayamizu">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+<!--    <link rel="shortcut icon" href="img/favicon.png" /> -->
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,600' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: '拝啓';
+		}
+	</style>
+</head>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/cb801a1a4f.js" crossorigin="anonymous"></script>
+
+
+<!-- header -->
+<header>
+
+</header>
+
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">目次</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#us">ご挨拶</a></li>
+					<li><a href="#profile">自己紹介</a></li>
+				        <li><a href="#schedule">スケジュール</a></li>
+					<li><a href="#location">会場</a></li>
+					<li><a href="#email">連絡先</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+	<!-- <\!-- Symbol -\-> -->
+	<!-- <div class="unit-20" style="text-align: center;"> -->
+	<!--   <div class="container"> -->
+	<!--     <br><br><br> -->
+	<!--     <img src="img/red.png" alt="red" width="80" height="80"> -->
+	<!--   </div> -->
+	<!-- </div> -->
+	<!-- <br> -->
+	
+	<!-- Introduction -->
+	<div class="intro section" id="us">
+	  <div class="container">
+
+	    <p>
+	      <img src="img/wedding/red.png" alt="red" width="80" height="80" style="display: block; margin: auto;">
+	      <br><br>
+	    </p>
+
+		  <p> Dear guests, </p>
+		  <div class="units-row units-split wrap">
+		    <div class="unit-20">
+		      <img src="img/wedding/photo.jpg" alt="us">
+		    </div>
+		    <div class="unit-100">
+		      <h2> <span id="typed"></span></h2>
+		    </div>
+		    <p>
+		      <br> <br>
+		      皆様 いかがお過ごしでしょうか<br>
+		      この度 結婚式を執り行う運びとなりました<br>
+		      日頃お世話になっている皆様と共に ささやかながら小宴を催したく存じます<br>
+		      ご多用中誠に恐縮ではございますが 是非ご出席賜りたくご案内申し上げます
+		    </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Profile -->
+	<div class="interests section second" id="profile">
+		<div class="container">
+			<h2> 自己紹介 / Profile </h2>
+			<ul class="profile-list list-flat">
+				<h4> 新郎 / Groom </h4>
+			  <li> 速水 祐作 （はやみず ゆうさく）</li>
+			  <div class="unit-33">
+			    <img src="img/ava.jpg" alt="Yusaku">
+			  </div>
+			  <br>
+				<h4> 新婦 / Bride </h4>
+			  <li> 石井 日奈子 （いしい ひなこ）</li>
+			  <div class="unit-33">
+			    <img src="img/wedding/hinako.jpg" alt="Hinako">
+			  </div>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Schedule -->
+
+	<script>
+	  function showRemainingTime() {
+	      const begin = new Date();
+	      const end = new Date(2024, 9, 27, 14, 30); // -> 2024/10/27
+
+	      const diffMillisecond = end.getTime() - begin.getTime();
+	      const day = Math.floor(diffMillisecond / 1000 / 60 / 60 / 24);
+	      const hour = Math.floor(diffMillisecond / 1000 / 60 / 60) % 24;
+	      const minute = Math.floor(diffMillisecond / 1000 / 60) % 60;
+	      const second = Math.floor(diffMillisecond / 1000) % 60;
+
+	      document.getElementById('day').textContent = day;
+	      document.getElementById('hour').textContent = hour;
+	      document.getElementById('minute').textContent = String(minute).padStart(2, '0');
+	      document.getElementById('second').textContent = String(second).padStart(2, '0');
+	  }
+
+	  // showRemainingTime ()
+          setInterval(showRemainingTime, 1000);
+	</script>
+
+	
+	<div class="schedule section second" id="schedule">
+		<div class="container">
+			<h2> スケジュール / Schedule </h2>
+			<ul class="schedule-list list-flat">
+			  <h4> 結婚式 / Ceremony </h4>
+			  <li> 2024年10月27日 日曜日 午後2時30分 ~ (受付開始 xx時xx分) </li>
+			  <br>
+			  <h4> 披露宴 / Banquet </h4>
+			  <li> 2024年10月27日 日曜日 午後3時45分 ~ </li>
+			</ul>
+		</div>
+		<div class="container">
+		  結婚式まで
+		  <p class="timer">
+		    <span id="day"></span>日
+		    <span id="hour"></span>時間
+		    <span id="minute"></span>分
+		    <span id="second"></span>秒
+		  </p>
+		</div>
+	</div>
+ 
+ 	<!-- Location -->
+	<div class="location info section second" id="location">
+		<div class="container">
+			<h2> 会場 / Access </h2>
+			<ul class="location-list list-flat">
+			  <li>
+			    神田明神・明神会館
+			  </li>
+			  <li>
+			    〒101-0021 東京都千代田区外神田２丁目１６−２
+			  </li>
+			  <li> <i class="fa-solid fa-phone"></i> 03-6384-0477</li>
+				<li>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2284.689267512536!2d139.7670140239958!3d35.70139771323358!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1eb6221a89%3A0xf158052a0d494570!2z5piO56We5Lya6aSo!5e0!3m2!1sja!2sjp!4v1720013148197!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Email -->
+	<div class="email section second" id="email">
+		<div class="container">
+			<h2> 連絡先 / RSVP </h2>
+			<ul class="schedule-list list-flat">
+			  <li>
+			    誠にお手数ですが 以下のフォーマットに従ってご記入いただき 9月24日までに下記メールアドレス宛に ご出欠のご連絡を送付※していただけますと幸いです よろしくお願い申し上げます
+			  </li>
+			  <li> -------------------- </li>
+			  <li> 御芳名 (Name): </li>
+			  <li> 御住所 (Address): </li>
+			  <li> 出欠 (Attendance): 出席 / 欠席 </li> 			  
+			  <li> アレルギー等 (Dietary preference): </li>
+			  <li> 備考 (Remarks): </li>
+			  <li> -------------------- </li>
+			  <a href="mailto:yusaku.hinako@icloud.com"><i class="fa-regular fa-envelope"></i></a> yusaku.hinako@icloud.com
+			  <li>※メール以外の方法（LINEや電話等）でお伝えいただいても構いません </li>
+			</ul>
+		</div>
+	</div>
+
+	
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>Sincerely yours.</h1>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-60">
+			    	<p> Copyright &copy; Yusaku Hayamizu. All rights reserved.</p>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Welcome to our wedding :)", "Have a wonderful time with our friends.", "Look forward to seeing you soon!"],
+		// strings: ["Welcome to our wedding!", "Thank you for coming."],
+		    
+		    typeSpeed:55,backDelay:2000,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
