@@ -1,2 +1,5 @@
+theme: jekyll-theme-minimal
+title: Yusaku Hayamizu's web page
+description: Bookmark this to keep an eye on my project updates!
 plugins:
   - jekyll-sitemap
