@@ -64,7 +64,7 @@
 	  <div class="container">
 
 	    <p>
-	      <img src="./wedding/red.png" alt="red" width="80" height="80" style="display: block; margin: auto;">
+	      <img src="./wedding/red.png" alt="red" width="88" height="88" style="display: block; margin: auto;">
 	      <br><br>
 	    </p>
 
@@ -73,12 +73,12 @@
 		    <div class="unit-20">
 		      <img src="./wedding/us.jpg" alt="us">
 		    </div>
-		    <div class="unit-100">
+		    <div class="unit-80">
 		      <h2> <span id="typed"></span></h2>
 		    </div>
 		    <p>
 		      <br> <br>
-		      暑い日が続きますが 皆様 いかがお過ごしでしょうか<br>
+		      謹啓 暑い日が続きますが 皆様 いかがお過ごしでしょうか<br>
 		      この度 神田明神にて結婚式を執り行う運びとなりました<br>
 		      日頃お世話になっている皆様と共に ささやかながら小宴を催したく存じます<br>
 		      ご多用中 誠に恐縮ではございますが 是非ご出席賜りたくご案内申し上げます
@@ -97,7 +97,7 @@
 			  <div class="unit-33">
 			    <img src="./wedding/yusaku.jpg" alt="Yusaku">
 			    <div class="unit-33">
-			      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
 			      </div>
 			  </div>
 			  <br>
@@ -139,20 +139,19 @@
 			<h2> スケジュール / Schedule </h2>
 			<ul class="schedule-list list-flat">
 			  <h4> 結婚式 / Ceremony </h4>
-			  <li> 2024年10月27日 日曜日 午後2時30分 ~ (受付開始 午後2時10分) </li>
+			  <li> 2024年10月27日 日曜日 午後2時30分 ~ </li>
+			  <li> (受付開始 午後2時10分) </li>
 			  <br>
 			  <h4> 披露宴 / Banquet </h4>
 			  <li> 2024年10月27日 日曜日 午後3時45分 ~ </li>
 			</ul>
-		</div>
-		<div class="container">
-		  結婚式まで
-		  <p class="timer">
-		    <span id="day"></span>日
-		    <span id="hour"></span>時間
-		    <span id="minute"></span>分
-		    <span id="second"></span>秒
-		  </p>
+		    <!-- 	結婚式まで、あと <p class="timer"> -->
+		    <!-- <span id="day"></span>日 -->
+		    <!-- <span id="hour"></span>時間 -->
+		    <!-- <span id="minute"></span>分 -->
+		    <!-- <span id="second"></span>秒 -->
+		</p>
+			
 		</div>
 	</div>
  
@@ -182,7 +181,8 @@
 			<h2> 連絡先 / RSVP </h2>
 			<ul class="schedule-list list-flat">
 			  <li>
-			    誠にお手数ですが 以下のフォーマットに従ってご記入いただき 9月24日までに下記メールアドレス宛に ご出欠のご連絡を送付※していただけますと幸いです よろしくお願い申し上げます
+			    誠にお手数ですが 以下のフォーマットに従ってご記入いただき 9月24日までに下記メールアドレス宛に
+			    ご出欠のご連絡を送付※していただけますと幸いです よろしくお願い申し上げます
 			  </li>
 			  <li> -------------------- </li>
 			  <li> 御芳名 (Name): </li>
@@ -224,7 +224,7 @@
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["Welcome to our wedding :)", "Have a wonderful time with our friends.", "Look forward to seeing you soon!"],
+		strings: ["Welcome to our wedding :)", "Have a wonderful time with us.", "Look forward to seeing you soon!"],
 		// strings: ["Welcome to our wedding!", "Thank you for coming."],
 		    
 		    typeSpeed:55,backDelay:2000,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
